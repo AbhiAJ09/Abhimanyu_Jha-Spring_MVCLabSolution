@@ -1,0 +1,27 @@
+package com.greatlearning.javafsd.studentmanagement.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.greatlearning.javafsd.studentmanagement.entity.Student;
+
+@Controller
+@RequestMapping("/students")
+
+
+public class StudentController {
+	
+	
+	
+	@RequestMapping("/begin-add")
+	public String handleBeginAdd(Model theModel) {
+
+		Student student = new Student();
+
+		theModel.addAttribute("student", student);
+
+		return "student-details";
+	}
+
+}
