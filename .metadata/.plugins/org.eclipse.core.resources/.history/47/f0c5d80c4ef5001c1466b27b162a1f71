@@ -1,7 +1,0 @@
-package com.greatlearning.javafsd.studentmanagement.service;
-
-import antlr.collections.List;
-
-public interface StudentService {
-	List <Student> listAll();
-}
